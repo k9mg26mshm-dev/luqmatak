@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>لقمتك | وجبات صحية متوازنة</title>
+<meta name="description" content="لقمتك: وجبات صحية ومتوازنة مع المكونات وطريقة التحضير، نباتية وغير نباتية.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🥗%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6ec;--card:#fff;--ink:#23352a;--mut:#64766a;--g:#7cc48a;--gd:#3f8f58;--gl:#e6f4e4;--beige:#f1e7d0;--line:#e7dec8;--err:#c0392b;--sh:0 4px 16px rgba(60,90,60,.1);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#17201a;--card:#202c24;--ink:#eaf2ea;--mut:#a3b5a8;--gl:#27382c;--beige:#2c3328;--line:#33433a;--gd:#7cc48a;--err:#ff7a68}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#17201a;--card:#202c24;--ink:#eaf2ea;--mut:#a3b5a8;--gl:#27382c;--beige:#2c3328;--line:#33433a;--gd:#7cc48a;--err:#ff7a68}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Tajawal',Tahoma,Arial,sans-serif;line-height:1.7;font-size:16px}
+button,input,select{font:inherit;color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:8px 14px;gap:8px}
+.logo{font-weight:800;font-size:22px;color:var(--gd);cursor:pointer;background:none;border:0;min-height:44px}
+nav{display:flex;gap:4px}nav button{background:none;border:0;border-radius:12px;padding:8px 12px;min-height:44px;cursor:pointer;color:var(--mut);font-weight:500}
+nav button.on{background:var(--gl);color:var(--gd);font-weight:700}
+main{max-width:980px;margin:0 auto;padding:16px 14px 40px}
+.hero{text-align:center;padding:36px 16px;background:linear-gradient(160deg,var(--gl),var(--beige));border-radius:24px}
+.hero .big{font-size:72px}.hero h1{margin:6px 0;font-size:34px;color:var(--gd)}.hero p{color:var(--mut);max-width:480px;margin:8px auto 20px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+.feat{background:var(--card);border-radius:16px;padding:14px;box-shadow:var(--sh);text-align:center}.feat b{display:block}
+.btn{background:var(--gd);color:#fff;border:0;border-radius:14px;padding:12px 22px;min-height:48px;font-weight:700;cursor:pointer}
+:root[data-theme="dark"] .btn:not(.sec):not(.dng),:root[data-theme="dark"] .chip.on,.btn.dk{color:#10200f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn:not(.sec):not(.dng),:root:not([data-theme="light"]) .chip.on{color:#10200f}}
+.btn.sec{background:var(--gl);color:var(--gd)}.btn.dng{background:transparent;color:var(--err);border:1px solid var(--err)}
+.btn:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+.panel{background:var(--card);border-radius:20px;padding:20px;box-shadow:var(--sh);max-width:520px;margin:0 auto}
+.panel h2{margin-top:0;color:var(--gd)}label{display:block;font-weight:700;margin:12px 0 4px}
+input[type=text],input[type=number],select{width:100%;min-height:48px;padding:10px 12px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.err{color:var(--err);font-size:14px;min-height:20px;margin:2px 0 0}
+.chk{display:flex;gap:10px;align-items:flex-start;margin:14px 0;background:var(--gl);padding:12px;border-radius:12px;font-weight:400}
+.chk input{width:22px;height:22px;margin-top:3px;flex:none}.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.note{background:var(--beige);border-radius:14px;padding:10px 14px;font-size:14px;color:var(--mut);margin:10px 0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px}.chip{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;min-height:44px;cursor:pointer}
+.chip.on{background:var(--gd);border-color:var(--gd);color:#fff;font-weight:700}
+h3.sec{margin:22px 0 8px;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.mc{background:var(--card);border-radius:18px;box-shadow:var(--sh);overflow:hidden;display:flex;flex-direction:column}
+.pic{height:120px;display:flex;align-items:center;justify-content:center;font-size:60px;position:relative}
+.pic .fav{position:absolute;top:8px;left:8px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.9);font-size:22px;cursor:pointer}
+.mb{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}.mb b{font-size:17px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;font-size:13px}.tag{background:var(--gl);color:var(--gd);border-radius:8px;padding:1px 8px}.tag.n{background:var(--beige);color:var(--mut)}
+.mb .btn{margin-top:auto;padding:8px;min-height:44px}
+.empty{text-align:center;padding:36px 16px;background:var(--card);border-radius:18px;color:var(--mut)}.empty .big{font-size:48px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:20;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--card);width:100%;max-width:560px;max-height:90%;overflow-y:auto;border-radius:22px 22px 0 0;padding:18px;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+@media(min-width:600px){.modal{align-items:center}.sheet{border-radius:22px}}
+.sheet h2{margin:4px 0;color:var(--gd)}.nut{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;text-align:center;margin:10px 0}.nut div{background:var(--gl);border-radius:12px;padding:6px 2px;font-size:13px}.nut b{display:block;font-size:17px}
+.sheet li{margin:3px 0}.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:12px;z-index:30}
+.foot{text-align:center;color:var(--mut);font-size:13px;margin-top:26px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+nav{overflow-x:auto}@media(max-width:400px){nav button{padding:8px 8px;font-size:14px}.logo{font-size:19px}}
+</style>
+</head>
+<body>
+<header><button class="logo" data-a="go" data-v="welcome">🥗 لقمتك</button><nav id="nav"></nav></header>
+<main id="app"></main>
+<div id="modal"></div>
+<script>
+(function(){
+var KEY='luqmatak_v1';
+var CATS={b:['الإفطار','🌅','#ffe9b8'],l:['الغداء','☀️','#d6f0d2'],d:['العشاء','🌙','#dfe6f7'],s:['وجبات خفيفة','🍎','#fbe0dc']};
+// v=1 نباتي (يشمل الألبان والعسل، بدون لحوم أو أسماك أو بيض)
+var M=[
+{c:'b',v:1,e:'🥣',n:'شوفان بالموز والقرفة',k:320,p:10,cb:52,f:7,i:['½ كوب شوفان','1 كوب حليب أو مشروب نباتي','1 موزة مقطعة','رشة قرفة','ملعقة صغيرة عسل'],s:['اطبخ الشوفان مع الحليب 5 دقائق على نار هادئة.','أضف الموز والقرفة.','قدّمه دافئًا مع العسل.']},
+{c:'b',v:1,e:'🫘',n:'فول مدمس بزيت الزيتون',k:310,p:17,cb:40,f:9,i:['1 كوب فول مدمس','ملعقة زيت زيتون','ليمون وثوم','طماطم وبقدونس','خبز أسمر'],s:['سخّن الفول وهرسه قليلًا.','أضف الثوم والليمون وزيت الزيتون.','زيّنه بالطماطم والبقدونس وقدّمه مع الخبز.']},
+{c:'b',v:0,e:'🍳',n:'أومليت الخضار',k:290,p:19,cb:8,f:20,i:['2 بيضة','فلفل ملوّن وسبانخ','بصل أخضر','ملعقة زيت زيتون','ملح وفلفل أسود'],s:['اخفق البيض مع الملح والفلفل.','قلّب الخضار في الزيت دقيقتين.','اسكب البيض واطهِه حتى يتماسك.']},
+{c:'b',v:1,e:'🥪',n:'خبز أسمر باللبنة والخيار',k:280,p:13,cb:34,f:9,i:['شريحتان خبز أسمر','3 ملاعق لبنة','خيار وطماطم','نعناع'],s:['ادهن اللبنة على الخبز.','وزّع الخيار والطماطم.','زيّن بالنعناع.']},
+{c:'b',v:1,e:'🍓',n:'زبادي يوناني بالتوت والمكسرات',k:300,p:18,cb:28,f:12,i:['1 كوب زبادي يوناني','حفنة توت','ملعقة لوز مفروم','ملعقة صغيرة عسل'],s:['ضع الزبادي في وعاء.','أضف التوت واللوز.','رشّ العسل وقدّمه باردًا.']},
+{c:'l',v:1,e:'🍲',n:'شوربة عدس بالخضار',k:340,p:18,cb:55,f:5,i:['1 كوب عدس أحمر','جزرة وبصلة','كمون وكركم','ليمون','ماء أو مرق خضار'],s:['قلّب البصل والجزر قليلًا.','أضف العدس والتوابل والماء واطبخ 25 دقيقة.','اهرس الشوربة واعصر عليها الليمون.']},
+{c:'l',v:1,e:'🥗',n:'سلطة الحمص والكينوا',k:420,p:17,cb:58,f:13,i:['½ كوب كينوا مطبوخة','½ كوب حمص مسلوق','خيار وطماطم وبقدونس','زيت زيتون وليمون'],s:['اخلط الكينوا والحمص والخضار.','أضف الزيت والليمون والملح.','قدّمها باردة.']},
+{c:'l',v:0,e:'🍗',n:'صدر دجاج مشوي مع أرز بني',k:520,p:42,cb:48,f:13,i:['150 غ صدر دجاج','½ كوب أرز بني مطبوخ','بروكلي مسلوق','ثوم وليمون وزيت زيتون'],s:['تبّل الدجاج بالثوم والليمون والزيت.','اشوه 6–7 دقائق لكل جانب.','قدّمه مع الأرز والبروكلي.']},
+{c:'l',v:0,e:'🐟',n:'سمك مشوي مع خضار',k:450,p:38,cb:25,f:20,i:['فيليه سمك 150 غ','كوسا وجزر وبطاطا صغيرة','ليمون وبهارات','زيت زيتون'],s:['تبّل السمك واتركه 15 دقيقة.','اشوِ السمك والخضار في الفرن 20 دقيقة على 190°م.','قدّمه مع شرائح الليمون.']},
+{c:'l',v:1,e:'🌯',n:'لفة فلافل مشوية مع سلطة',k:460,p:16,cb:62,f:16,i:['3 أقراص فلافل مخبوزة','خبز أسمر','خس وطماطم ومخلل','صلصة طحينة خفيفة'],s:['اخبز الفلافل في الفرن.','ضعها في الخبز مع الخضار.','أضف الطحينة ولفّ الساندويتش.']},
+{c:'d',v:1,e:'🥣',n:'شوربة الخضار الدافئة',k:180,p:6,cb:30,f:4,i:['كوسا وجزر وكرفس','بصل وثوم','ماء أو مرق خضار','زعتر وفلفل أسود'],s:['قلّب البصل والثوم قليلًا.','أضف الخضار المقطعة والماء.','اطبخ 25 دقيقة وتبّل.']},
+{c:'d',v:1,e:'🥙',n:'سلطة الجبن والزيتون',k:310,p:13,cb:14,f:23,i:['خيار وطماطم وفلفل','50 غ جبنة فيتا','زيتون','أوريغانو وزيت زيتون'],s:['قطّع الخضار.','أضف الجبنة والزيتون.','تبّل بالزيت والأوريغانو.']},
+{c:'d',v:0,e:'🐟',n:'سلطة التونة مع الذرة',k:330,p:28,cb:20,f:14,i:['علبة تونة بالماء','خس وذرة وطماطم','ملعقة زبادي','ليمون'],s:['صفّي التونة وفتّتها.','اخلطها مع الخضار.','أضف الزبادي والليمون وقدّمها.']},
+{c:'d',v:1,e:'🍄',n:'خضار مشوية بالفطر',k:260,p:9,cb:24,f:15,i:['فطر وكوسا وباذنجان','فلفل ملوّن','زيت زيتون','ثوم وأعشاب'],s:['قطّع الخضار وتبّلها.','اشوها في الفرن 25 دقيقة على 200°م.','قدّمها مع رشة ليمون.']},
+{c:'s',v:1,e:'🌴',n:'تمر ولوز',k:150,p:3,cb:24,f:6,i:['3 تمرات','8 حبات لوز'],s:['انزع النوى.','احشُ كل تمرة بلوزة وقدّمها.']},
+{c:'s',v:1,e:'🍎',n:'زبادي بالفواكه',k:140,p:8,cb:20,f:3,i:['½ كوب زبادي','حفنة فاكهة طازجة'],s:['قطّع الفاكهة وضعها فوق الزبادي.']},
+{c:'s',v:1,e:'🥕',n:'خضار طازجة مع الحمص',k:160,p:6,cb:20,f:7,i:['جزر وخيار','3 ملاعق حمص'],s:['قطّع الخضار أصابع.','قدّمها مع الحمص للغمس.']},
+{c:'s',v:0,e:'🥚',n:'بيضة مسلوقة مع خيار',k:110,p:8,cb:3,f:7,i:['بيضة','خيار','رشة ملح وفلفل'],s:['اسلق البيضة 9 دقائق.','قشّرها وقدّمها مع الخيار.']}
+];
+var st={user:null,favs:[],consent:false};
+var view='welcome',filter='all',eMode=false;
+var $=function(s){return document.querySelector(s)};
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function dg(s){return String(s).replace(/[٠-٩]/g,function(c){return c.charCodeAt(0)-1632}).replace(/[۰-۹]/g,function(c){return c.charCodeAt(0)-1776}).replace(/[٫,]/g,'.')}
+function favCount(){return meals().filter(function(m){return st.favs.indexOf(m.id)>-1}).length}
+function load(){try{var r=localStorage.getItem(KEY);if(r){var o=JSON.parse(r);if(o&&o.user){st.user=o.user;st.favs=o.favs||[];st.consent=true;view='home'}}}catch(e){}}
+function save(){if(!st.consent)return;try{localStorage.setItem(KEY,JSON.stringify({user:st.user,favs:st.favs}))}catch(e){toast('تعذّر الحفظ على هذا المتصفح')}}
+function wipe(){try{localStorage.removeItem(KEY)}catch(e){}st={user:null,favs:[],consent:false}}
+function toast(t){var d=document.createElement('div');d.className='toast';d.setAttribute('role','status');d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},2200)}
+function go(v){view=v;modal(null);render();window.scrollTo(0,0)}
+function nav(){var h='';if(st.user){[['home','الرئيسية'],['favs','المفضلة ('+favCount()+')'],['edit','بياناتي']].forEach(function(x){h+='<button data-a="go" data-v="'+x[0]+'" class="'+(view===x[0]?'on':'')+'">'+x[1]+'</button>'})}$('#nav').innerHTML=h}
+function welcome(){return '<section class="hero"><div class="big">🥗</div><h1>لقمتك</h1><p>اكتشف وجبات صحية ومتوازنة تناسب نظامك الغذائي، من الإفطار حتى العشاء، بخطوات تحضير بسيطة.</p><button class="btn" data-a="go" data-v="'+(st.user?'home':'form')+'">'+(st.user?'متابعة':'ابدأ الآن')+'</button></section><div class="feats"><div class="feat">🌱<b>نباتي أو غير نباتي</b>اقتراحات تناسب اختيارك</div><div class="feat">🍽️<b>٤ فئات وجبات</b>إفطار وغداء وعشاء ووجبات خفيفة</div><div class="feat">❤️<b>مفضلتك</b>احفظ ما يعجبك</div></div><p class="foot">معلومات عامة وليست نصيحة طبية.</p>'}
+function form(edit){var u=st.user||{};return '<div class="panel"><h2>'+(edit?'تعديل بياناتك':'أخبرنا عنك')+'</h2><form id="f" novalidate><label for="nm">الاسم</label><input type="text" id="nm" maxlength="30" autocomplete="given-name" value="'+esc(u.name||'').replace(/"/g,'&quot;')+'"><p class="err" id="e_nm"></p><label for="gn">الجنس</label><select id="gn"><option value="">اختر...</option><option value="f"'+(u.gender==='f'?' selected':'')+'>أنثى</option><option value="m"'+(u.gender==='m'?' selected':'')+'>ذكر</option></select><p class="err" id="e_gn"></p><label for="dt">نوع النظام الغذائي</label><select id="dt"><option value="">اختر...</option><option value="v"'+(u.diet==='v'?' selected':'')+'>نباتي</option><option value="n"'+(u.diet==='n'?' selected':'')+'>غير نباتي</option></select><p class="err" id="e_dt"></p><div class="row"><div><label for="ht">الطول (سم)</label><input type="text" id="ht" inputmode="decimal" autocomplete="off" value="'+(u.h||'')+'"><p class="err" id="e_ht"></p></div><div><label for="wt">الوزن (كغ)</label><input type="text" id="wt" inputmode="decimal" autocomplete="off" value="'+(u.w||'')+'"><p class="err" id="e_wt"></p></div></div><label class="chk" for="cs"><input type="checkbox" id="cs"'+(st.consent?' checked':'')+'><span>أوافق على حفظ بياناتي ومفضلاتي على هذا الجهاز فقط (في المتصفح) لزيارتي القادمة. إن لم أوافق فلن يُحفظ شيء.</span></label><div class="acts"><button class="btn" type="submit">'+(edit?'حفظ التعديلات':'اعرض الوجبات')+'</button>'+(edit?'<button class="btn dng" type="button" data-a="del">حذف بياناتي</button>':'')+'</div></form></div>'}
+function submit(e){e.preventDefault();var ok=true;function er(k,m){$('#e_'+k).textContent=m;if(m)ok=false}
+var nm=$('#nm').value.trim(),gn=$('#gn').value,dt=$('#dt').value,h=parseFloat(dg($('#ht').value)),w=parseFloat(dg($('#wt').value));
+er('nm',nm.length<2||nm.length>30?'أدخل اسمًا من حرفين إلى ٣٠ حرفًا':'');er('gn',gn?'':'اختر الجنس');er('dt',dt?'':'اختر نوع النظام الغذائي');
+er('ht',isNaN(h)||h<100||h>250?'الطول يجب أن يكون بين ١٠٠ و٢٥٠ سم':'');er('wt',isNaN(w)||w<25||w>300?'الوزن يجب أن يكون بين ٢٥ و٣٠٠ كغ':'');
+if(!ok){toast('يرجى تصحيح الحقول المعلّمة');return}
+st.user={name:nm,gender:gn,diet:dt,h:h,w:w};st.consent=$('#cs').checked;if(st.consent)save();else{try{localStorage.removeItem(KEY)}catch(x){}}
+toast('تم الحفظ');go('home')}
+function meals(){return M.map(function(m,i){m.id=i;return m}).filter(function(m){return st.user.diet==='n'||m.v===1})}
+function card(m){var c=CATS[m.c],f=st.favs.indexOf(m.id)>-1;return '<article class="mc"><div class="pic" style="background:'+c[2]+'">'+m.e+'<button class="fav" data-a="fav" data-id="'+m.id+'" aria-label="'+(f?'إزالة من المفضلة':'إضافة إلى المفضلة')+'">'+(f?'❤️':'🤍')+'</button></div><div class="mb"><b>'+m.n+'</b><div class="tags"><span class="tag">'+(m.v?'نباتي':'غير نباتي')+'</span><span class="tag n">≈ '+m.k+' سعرة</span></div><button class="btn sec" data-a="open" data-id="'+m.id+'">المكونات والتحضير</button></div></article>'}
+function home(){var g=st.user.gender==='f'?'أهلًا بكِ':'أهلًا بك',all=meals(),h='<h2>'+g+' يا '+esc(st.user.name)+' 👋</h2><div class="note">اقتراحات عامة ومتوازنة وليست تشخيصًا أو حمية علاجية. القيم الغذائية تقريبية لحصة واحدة، ولا نعتمد الطول والوزن لتحديد احتياجك الدقيق. "نباتي" هنا يشمل الألبان والعسل دون اللحوم والأسماك والبيض. لاحتياج خاص راجع مختصًا.</div><div class="chips"><button class="chip'+(filter==='all'?' on':'')+'" data-a="flt" data-f="all">الكل</button>';
+for(var k in CATS)h+='<button class="chip'+(filter===k?' on':'')+'" data-a="flt" data-f="'+k+'">'+CATS[k][1]+' '+CATS[k][0]+'</button>';h+='</div>';var any=false;
+for(var k2 in CATS){if(filter!=='all'&&filter!==k2)continue;var l=all.filter(function(m){return m.c===k2});if(!l.length)continue;any=true;h+='<h3 class="sec">'+CATS[k2][1]+' '+CATS[k2][0]+'</h3><div class="grid">'+l.map(card).join('')+'</div>'}
+if(!any)h+='<div class="empty"><div class="big">🔍</div>لا توجد وجبات مناسبة في هذه الفئة حاليًا. جرّب فئة أخرى.</div>';return h}
+function favs(){var l=meals().filter(function(m){return st.favs.indexOf(m.id)>-1});if(!l.length)return '<div class="empty"><div class="big">🤍</div>لم تضف أي وجبة للمفضلة بعد.<br><br><button class="btn" data-a="go" data-v="home">تصفّح الوجبات</button></div>';return '<h2>وجباتك المفضلة ❤️</h2><div class="grid">'+l.map(card).join('')+'</div>'}
+function modal(id){var el=$('#modal');if(id===null){el.innerHTML='';return}var m=M[id],f=st.favs.indexOf(id)>-1;
+el.innerHTML='<div class="modal" data-a="close"><div class="sheet" role="dialog" aria-modal="true" aria-label="'+m.n+'"><div style="font-size:54px;text-align:center">'+m.e+'</div><h2>'+m.n+'</h2><div class="tags"><span class="tag">'+(m.v?'نباتي':'غير نباتي')+'</span><span class="tag n">'+CATS[m.c][0]+'</span></div><div class="nut"><div><b>'+m.k+'</b>سعرة</div><div><b>'+m.p+' غ</b>بروتين</div><div><b>'+m.cb+' غ</b>كربوهيدرات</div><div><b>'+m.f+' غ</b>دهون</div></div><p class="note">قيم تقريبية لحصة واحدة وقد تختلف حسب الكميات.</p><h3>المكونات</h3><ul>'+m.i.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul><h3>طريقة التحضير</h3><ol>'+m.s.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol><div class="acts"><button class="btn" data-a="fav" data-id="'+id+'">'+(f?'💔 إزالة من المفضلة':'❤️ أضف للمفضلة')+'</button><button class="btn sec" data-a="close-btn">إغلاق</button></div></div></div>'}
+function render(){nav();var a=$('#app');if(view!=='welcome'&&view!=='form'&&!st.user)view='welcome';
+if(view==='welcome')a.innerHTML=welcome();else if(view==='form'||view==='edit'){a.innerHTML=form(view==='edit');$('#f').addEventListener('submit',submit)}else if(view==='home')a.innerHTML=home();else if(view==='favs')a.innerHTML=favs()}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-a]');if(!t)return;var a=t.dataset.a;
+if(a==='close'){if(e.target===t)modal(null);return}
+if(a==='close-btn'){modal(null);return}
+if(a==='go')go(t.dataset.v);
+else if(a==='flt'){filter=t.dataset.f;render()}
+else if(a==='open'){modal(+t.dataset.id);var cb=document.querySelector('[data-a="close-btn"]');if(cb)cb.focus()}
+else if(a==='fav'){var id=+t.dataset.id,i=st.favs.indexOf(id);if(i>-1){st.favs.splice(i,1);toast('أُزيلت من المفضلة')}else{st.favs.push(id);toast('أُضيفت إلى المفضلة')}save();var open=$('#modal').innerHTML;render();if(open){modal(id);var fb=document.querySelector('#modal [data-a="fav"]');if(fb)fb.focus()}}
+else if(a==='del'){if(confirm('سيتم حذف بياناتك ومفضلاتك من هذا الجهاز. هل أنت متأكد؟')){wipe();toast('تم حذف بياناتك');go('welcome')}}
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')modal(null)});
+load();render();
+})();
+</script>
+</body>
+</html>
